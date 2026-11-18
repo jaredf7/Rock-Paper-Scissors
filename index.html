@@ -3,10 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-    
+    <h1>Rock, Paper, Scissors</h1>
+    <div class="container">
+        <p>Player Score: <span id="playerScore"></span></p>
+        <p>Computer Score: <span id="computerScore"></span></p>
+    </div>
+    <div class="round-result">
+        <div id="player-result">
+            <img id="img-p" src="images/andrsrxn--hand-grabbing.png" alt="image showcasing the player choice" width="160">
+        </div>
+        <span>VS</span>
+        <div id="comp-result">
+            <img id="img-c" src="images/andrsrxn--hand-grabbing.png" alt="image showcasing the player choice" width="160">
+        </div>
+    </div>
+    <div class="round-result" id="round-result"></div>
+    <div class="buttons">
+        <button class="btn-1" id="rock-button">Rock</button>
+        <button class = "btn-1" id="paper-button">Paper</button>
+        <button class = "btn-1" id="scissors-button">Scissors</button>
+    </div>
+    <div class="reset-button">
+        <button id="btn-reset" class="btn-reset" >Reset</button>
+    </div>
 </body>
 </html>
